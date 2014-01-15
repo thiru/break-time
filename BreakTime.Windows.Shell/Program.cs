@@ -17,7 +17,8 @@ namespace BreakTime.Windows.Shell
     {
       var trayIcon = new TrayIcon();
       trayIcon.Show();
-      Application.Run();
+      Application.EnableVisualStyles();
+      Application.Run(new WebContainer());
     }
   }
 }
