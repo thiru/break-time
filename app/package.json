@@ -1,0 +1,15 @@
+{
+  "name": "break-time",
+  "version": "3.0.0",
+  "author": "Thiru <thiru0130@gmail.com>",
+  "description": "A smart break reminder app",
+  "main": "index",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/thiru/break-time.git",
+  }
+  "keywords": [ "break", "stress", "sustainable", "work" ],
+  "license": "GPLv2",
+  "engines": { "node": "0.10.x" },
+}
