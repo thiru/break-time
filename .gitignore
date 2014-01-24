@@ -4,7 +4,7 @@ bin
 doc
 obj
 publish
-app/node_modules/
+node_modules
 *.DotSettings*
 *.[Cc]ache
 *.[Rr]e[Ss]harper
