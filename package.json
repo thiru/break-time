@@ -22,6 +22,7 @@
   "window":
   {
     "height": 300, "width": 600,
+    "icon": "ui/images/simple-flower.png",
     "position": "center",
     "title": "Break Time",
     "toolbar": false
