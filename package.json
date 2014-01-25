@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "author": "Thiru <thiru0130@gmail.com>",
   "description": "A smart break reminder app",
-  "main": "ui/index.html",
+  "main": "ui/splash-screen.html",
   "repository":
   {
     "type": "git",
@@ -18,5 +18,12 @@
   "scripts":
   {
     "start": "nodewebkit"
+  },
+  "window":
+  {
+    "height": 300, "width": 600,
+    "position": "center",
+    "title": "Break Time",
+    "toolbar": false
   }
 }

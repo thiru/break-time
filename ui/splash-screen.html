@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Break Time</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link href="./styles/common.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="./scripts/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="./scripts/common.js"></script>
+  <style>
+    body
+    {
+      background-image: url('images/blue-horizon.svg');
+      background-position: left top;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    h1
+    {
+      color: white;
+      font-size: 3em;
+      font-weight: normal;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $("h1").center();
+      $(window).resize(function() { $("h1").center(); });
+    });
+  </script>
+</head>
+<body>
+  <h1>Break Time</h1>
+</body>
+</html>
