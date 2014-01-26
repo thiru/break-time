@@ -41,6 +41,11 @@
 
       // Auto-close this window
       window.setTimeout(function() { window.close(); }, 1000);
+
+      // Allow pressing ESC to close the window
+      $(window).keydown(function(e) {
+        if (e.which == 27) window.close();
+      });
     });
   </script>
 </head>
