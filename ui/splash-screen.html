@@ -29,12 +29,17 @@
     }
   </style>
   <script>
-    var appVer = "";
-    try { appVer = require('../package.json').version; } catch(ex) {}
     $(document).ready(function() {
+      // Keep text centred
       $('h1').center();
       $(window).resize(function() { $("h1").center(); });
+
+      // Set app version
+      var appVer = '';
+      try { appVer = require('../package.json').version; } catch(ex) {}
       $('#version').text(appVer);
+
+      // Auto-close this window
       window.setTimeout(function() { window.close(); }, 1000);
     });
   </script>
