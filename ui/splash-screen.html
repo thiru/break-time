@@ -35,6 +35,7 @@
       $('h1').center();
       $(window).resize(function() { $("h1").center(); });
       $('#version').text(appVer);
+      window.setTimeout(function() { window.close(); }, 1000);
     });
   </script>
 </head>
