@@ -22,15 +22,25 @@
       font-size: 3em;
       font-weight: normal;
     }
+    #version
+    {
+      color: #CCC;
+      font-size: 0.3em;
+    }
   </style>
   <script>
+    var appVer = "";
+    try { appVer = require('../package.json').version; } catch(ex) {}
     $(document).ready(function() {
-      $("h1").center();
+      $('h1').center();
       $(window).resize(function() { $("h1").center(); });
+      $('#version').text(appVer);
     });
   </script>
 </head>
 <body>
-  <h1>Break Time</h1>
+
+<h1>Break Time <span id="version">x.x.x</span></h1>
+
 </body>
 </html>
