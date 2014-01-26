@@ -18,7 +18,7 @@
   {
     "frame": false,
     "height": 200, "width": 500,
-    "icon": "ui/images/simple-flower.png",
+    "icon": "ui/images/flower-icon.png",
     "position": "center",
     "title": "Break Time",
     "toolbar": false
