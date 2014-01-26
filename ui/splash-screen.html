@@ -40,11 +40,13 @@
       $('#version').text(appVer);
 
       // Auto-close this window
-      window.setTimeout(function() { window.close(); }, 1000);
+      var gui = require('nw.gui');
+      var win = gui.Window.get();
+      window.setTimeout(function() { win.hide(); }, 1000);
 
       // Allow pressing ESC to close the window
       $(window).keydown(function(e) {
-        if (e.which == 27) window.close();
+        if (e.which == 27) win.hide();
       });
     });
   </script>
