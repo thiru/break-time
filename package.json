@@ -1,16 +1,9 @@
 {
-  "name": "break-time",
-  "version": "3.0.0",
   "author": "Thiru <thiru0130@gmail.com>",
   "description": "A smart break reminder app",
-  "main": "ui/splash-screen.html",
-  "repository":
-  {
-    "type": "git",
-    "url": "https://github.com/thiru/break-time.git"
-  },
-  "keywords": [ "break", "stress", "sustainable", "work" ],
-  "license": "GPLv2",
+  "name": "break-time",
+  "version": "3.0.0",
+
   "dependencies":
   {
     "nodewebkit": "0.8.x"
@@ -19,6 +12,8 @@
   {
     "start": "nodewebkit"
   },
+
+  "main": "ui/splash-screen.html",
   "window":
   {
     "frame": false,
@@ -27,5 +22,13 @@
     "position": "center",
     "title": "Break Time",
     "toolbar": false
+  },
+
+  "license": "GPLv2",
+  "keywords": [ "break", "stress", "sustainable", "work" ],
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/thiru/break-time.git"
   }
 }
