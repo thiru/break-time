@@ -1,27 +1,12 @@
 {
   "author": "Thiru <thiru0130@gmail.com>",
   "description": "A smart break reminder app",
+  "main": "index.js",
   "name": "break-time",
   "version": "3.0.0",
 
   "dependencies":
   {
-    "nodewebkit": "0.8.x"
-  },
-  "scripts":
-  {
-    "start": "nodewebkit"
-  },
-
-  "main": "ui/splash-screen.html",
-  "window":
-  {
-    "frame": false,
-    "height": 200, "width": 500,
-    "icon": "ui/images/flower-icon.png",
-    "position": "center",
-    "title": "Break Time",
-    "toolbar": false
   },
 
   "license": "GPLv2",
