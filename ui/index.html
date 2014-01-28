@@ -7,10 +7,20 @@
   <meta name="viewport" content="width=device-width" />
   <link href="./styles/common.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="./scripts/common.js"></script>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script>
+    /*
+    var socket = io.connect();
+    socket.on('message', function(time) {
+      document.getElementById('time').innerHTML = time;
+    });
+    */
+  </script>
 </head>
 <body>
   <div id="container">
     <h1>Break Time</h1>
+    <p id='time'></p>
   </div>
 </body>
 </html>
