@@ -1,7 +1,7 @@
 {
   "author": "Thiru <thiru0130@gmail.com>",
   "description": "A smart break reminder app",
-  "main": "index.js",
+  "main": "app.js",
   "name": "break-time",
   "version": "3.0.0",
 
