@@ -5,6 +5,8 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var open = require('open');
+var routes = require('./routes');
+
 console.log('done.');
 
 process.stdout.write('Configuring Express... ');
@@ -25,6 +27,9 @@ app.use(express.static('public'));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
+
+app.set('title', 'Break Time');
+app.get('/', routes.index);
 console.log('done.');
 
 http.createServer(app).listen(app.get('port'), function() {
@@ -33,4 +38,3 @@ http.createServer(app).listen(app.get('port'), function() {
   open('http://localhost:' + app.get('port'));
   console.log('done');
 });
-
