@@ -1,15 +1,13 @@
 console.log('Starting Break Time...');
 
-process.stdout.write('Loading dependencies... ');
+var colors = require('colors');
 var express = require('express');
 var http = require('http');
 var path = require('path');
 var open = require('open');
 var routes = require('./routes');
 
-console.log('done.');
-
-process.stdout.write('Configuring Express... ');
+console.log('[START] '.yellow +  'Express configuration');
 var defaultPort = 8080;
 var app = express();
 
@@ -30,11 +28,11 @@ if ('development' == app.get('env')) {
 
 app.set('title', 'Break Time');
 app.get('/', routes.index);
-console.log('done.');
+console.log('[END] '.green + 'Express configuration');
 
 http.createServer(app).listen(app.get('port'), function() {
-  console.log('Break Time\'s web server started and listening on port ' + app.get('port') + '.');
-  process.stdout.write('Opening home page... ');
+  console.log('Express server started and listening on port ' + app.get('port') + '.');
+  console.log('[END] '.yellow + 'Open home page');
   open('http://localhost:' + app.get('port'));
-  console.log('done');
+  console.log('[START] '.green + 'Open home page');
 });
