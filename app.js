@@ -15,12 +15,12 @@ app.set('port', process.env.PORT || defaultPort);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.logger('dev'));
-app.use(express.favicon(__dirname + '/ui/images/favicon.ico'));
+app.use(express.favicon(__dirname + '/public/images/favicon.ico'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static('ui'));
+app.use(express.static('public'));
 
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
