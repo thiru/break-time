@@ -1,0 +1,26 @@
+extends layout
+
+block title
+  title= settings.title
+
+block extraHead
+  link(href='/stylesheets/splash.css', rel='stylesheet', type='text/css')
+
+block content
+  script.
+    $(document).ready(function() {
+      // Keep text centred
+      $('h1').centre();
+      $(window).resize(function() { $("h1").centre(); });
+
+      // TODO: Auto-close this window
+      //window.setTimeout(function() { window.close(); }, 1000);
+
+      // Allow pressing ESC to close the window
+      $(window).keydown(function(e) {
+        if (e.which == 27) window.close();
+      });
+    });
+    
+  h1 Break Time&nbsp;
+    span#version= settings.version

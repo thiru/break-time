@@ -1,0 +1,18 @@
+body
+{
+  background-image: url('/images/blue-horizon.svg');
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1
+{
+  color: white;
+  font-size: 3em;
+  font-weight: normal;
+}
+#version
+{
+  color: #CCC;
+  font-size: 0.3em;
+}

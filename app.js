@@ -3,7 +3,11 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var open = require('open');
-var routes = require('./routes');
+var pjson = require('./package.json');
+
+var routes = {};
+routes.index = require('./routes/index');
+routes.splash = require('./routes/splash');
 
 var defaultPort = 8080;
 
@@ -18,6 +22,7 @@ function initExpress()
   console.log('[START] '.yellow +  'Express configuration');
   var app = express();
   app.set('title', 'Break Time');
+  app.set('version', pjson.version);
   app.set('port', process.env.PORT || defaultPort);
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'jade');
@@ -35,6 +40,7 @@ function initExpress()
 
   // Routes
   app.get('/', routes.index);
+  app.get('/splash', routes.splash);
 
   console.log('[END] '.green + 'Express configuration');
   return app;
