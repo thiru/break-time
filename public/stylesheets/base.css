@@ -1,6 +1,53 @@
+/* Generic ********************************************************** */
+
 *
 {
+  color: #555;
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+a
+{
+  color: #3598DB;
+  text-decoration: none;
+}
+a *
+{
+  color: #3598DB;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+
+/* Master Layout **************************************************** */
+
+footer
+{
+  color: #999;
+  font-size: 0.66em;
+  text-align: center;
+}
+
+/* [START] Sticky footer */
+html
+{
+  position: relative;
+  min-height: 100%;
+}
+body
+{
+  margin: 0 0 1em; // bottom footer height
+}
+footer
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.5em;
+  width: 100%;
+}
+/* [END] Sticky footer */
+

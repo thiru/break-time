@@ -3,9 +3,12 @@ html
   head
     block title
     meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     link(href='/stylesheets/base.css', rel='stylesheet', type='text/css')
     script(type='text/javascript', src='/javascripts/jquery-2.1.0.min.js')
     script(type='text/javascript', src='/javascripts/globals.js')
   body
-    block content
+    main
+      block content
+    footer
+      &copy; 2014 Thirushanth Thirunavukarasu
