@@ -4,31 +4,31 @@ using System.Windows.Forms;
 
 namespace BreakTime.Windows.Shell
 {
+  /// <summary>
+  /// The splash screen.
+  /// </summary>
+  public partial class Splash : Form
+  {
     /// <summary>
-    /// The splash screen.
+    /// Initialises a new instance of this class.
     /// </summary>
-    public partial class Splash : Form
+    public Splash()
     {
-        /// <summary>
-        /// Initialises a new instance of this class.
-        /// </summary>
-        public Splash()
-        {
-            InitializeComponent();
-        }
-
-        protected override void OnLoad(EventArgs e)
-        {
-            ClientSize = BackgroundImage.Size;
-            new Thread(HideWindow).Start();
-
-            base.OnLoad(e);
-        }
-
-        private void HideWindow()
-        {
-            Thread.Sleep(1000);
-            Invoke((Action)Hide);
-        }
+      InitializeComponent();
     }
+
+    protected override void OnLoad(EventArgs e)
+    {
+      ClientSize = BackgroundImage.Size;
+      new Thread(HideWindow).Start();
+
+      base.OnLoad(e);
+    }
+
+    private void HideWindow()
+    {
+      Thread.Sleep(1000);
+      Invoke((Action)Close);
+    }
+  }
 }
